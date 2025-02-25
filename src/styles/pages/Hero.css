@@ -1,12 +1,12 @@
-.Home{
+.hero{
     width: 100%;
     height: 100vh;
     position: relative;
     font-family: 'Poppins';
 }
 
-.home_image{
-    background-image: url('/images/GT63_coupe_hero.webp');
+.hero_image{
+    background-image: url('/images/Hero/GT63_coupe_hero.webp');
     width: 100%;
     height: 100%;
     background-position: center;
@@ -37,11 +37,11 @@
 }
 
 .cta_button{
-    padding: 1em 3em;
+    padding: 1.5em 3em;
     background: transparent;
     color: white;
-    border: 1px solid #fff;
-    border-radius: 0px;
+    border: 2px solid #fff;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
     font-weight: 600;

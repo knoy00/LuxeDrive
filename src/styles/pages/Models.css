@@ -1,0 +1,66 @@
+.models{
+    width: 100%;
+    font-family: poppins;
+    padding-top: 100px;
+}
+
+.models h1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.car_models_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.car_model_1{
+    background-image: url('/images/GT63_hero.jpg');
+
+}
+
+.car_model_2{
+    background-image: url('/images/GT63_grey.jpg');
+}
+
+.car_model_3{
+    background-image: url('/images/GT63s.jpg');
+}
+
+.car_model_1, .car_model_2, .car_model_3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.car_model_1 p, .car_model_2 p, .car_model_3 p{
+    margin-top: 90%;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 10;
+    position: absolute;
+}
+
+.car_model_1::after, .car_model_2::after, .car_model_3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust height for more/less darkness */
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.014)); 
+    z-index: 1;
+}
+
+.car_model_1:hover, .car_model_2:hover, .car_model_3:hover{
+    transform: scale(1.05);
+}

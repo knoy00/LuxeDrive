@@ -1,10 +1,10 @@
-import Navbar from './components/Navbar.jsx'
-import Home from './pages/Home.jsx'
+
+import LandinPage from './pages/LandingPage.jsx'
 
 function App() {
   return (
     <>
-      <Home />
+      <LandinPage />
     </>
   )
 }

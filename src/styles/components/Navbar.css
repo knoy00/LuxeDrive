@@ -6,12 +6,15 @@
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .logo{
     color: #fff;
-    font-size: 1em;
-    font-weight: bold;
     font-family: 'Poppins';
+}
+
+.logo h2{
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 0;
 }
