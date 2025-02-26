@@ -12,19 +12,81 @@
     padding-bottom: 50px;
 }
 
-.brand_grid{
+.brand_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 20px; 
+    gap: 20px;
     width: 100%;
-    max-width: 1500px; 
-    margin: auto; 
-    height: 1000px;
+    max-width: 1500px;
+    margin: auto;
+    height: 1200px;
 }
 
-.brand_grid div{
+.brand_grid .div {
     width: 100%;
-    background-color: red;
-    padding: 80px;
+    padding: 0;
+    border-radius: 0px;
+    position: relative; /* This makes absolute positioning work inside */
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+}
+
+.brand_grid .div:hover::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust height for more/less darkness */
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)); 
+    z-index: 1;
+}
+
+.brand_img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.brand_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.brand_img:hover img {
+    transform: scale(1.1); /* Smooth zoom effect on hover */
+}
+
+.brand_text_overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    color: white;
+    padding: 20px 50px;
+    z-index: 5;
+}
+
+.brand_text_overlay h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.brand_text_overlay p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.brand_text_overlay button {
+    padding: 15px 50px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
 }

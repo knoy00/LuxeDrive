@@ -6,14 +6,52 @@ function Brand() {
     <div className='our_brands'>
       <h1 className="brand_title">Our Brands of Luxury</h1>
 
-      <div className="brand_grid">
-        <div>
-            
+        <div className="brand_grid">
+            <div className="div">
+                <div className="brand_img">
+                    <img src="/public/images/Bentley.avif" alt="" />
+                </div>
+
+               <div className="brand_text_overlay">
+                    <h2>Bentley</h2>
+                    <p>Starting at $150,000</p>
+                    <motion.button whileHover={{ scale: 1.1 }}>Read More</motion.button>
+               </div>
+            </div> 
+            <div className="div">
+                <div className="brand_img">
+                    <img src="/public/images/Porsche911.avif" alt="" />
+                </div>
+
+               <div className="brand_text_overlay">
+                    <h2>Porsche</h2>
+                    <p>Starting at $150,000</p>
+                    <motion.button whileHover={{ scale: 1.1 }}>Read More</motion.button>
+               </div>
+            </div> 
+            <div className="div">
+                <div className="brand_img">
+                    <img src="/public/images/Aston_Martin.jpg" alt="" />
+                </div>
+
+               <div className="brand_text_overlay">
+                    <h2>Aston Martin</h2>
+                    <p>Starting at $150,000</p>
+                    <motion.button whileHover={{ scale: 1.1 }}>Read More</motion.button>
+               </div>
+            </div> 
+            <div className="div">
+                <div className="brand_img">
+                    <img src="/public/images/GLS63.avif" alt="" />
+                </div>
+
+               <div className="brand_text_overlay">
+                    <h2>Mercedes Benz</h2>
+                    <p>Starting at $150,000</p>
+                    <motion.button whileHover={{ scale: 1.1 }}>Read More</motion.button>
+               </div>
+            </div> 
         </div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-      </div>
     </div>
   )
 }
