@@ -1,0 +1,71 @@
+.luxe_drive_page{
+    width: 100%;
+    font-family: poppins;
+    margin-top: 80px;
+    background-color: #181818;
+    padding: 20px;
+}
+
+.luxe_drive_page h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    color: #efefef;
+    padding-bottom: 20px;
+}
+
+.luxe_drive_page h1 span{
+    color: #ff2a009b;
+}
+
+.luxe_drive_page p{
+    text-align: center;
+    width: 100%;
+    padding: 20px 100px;
+    line-height: 30px;
+    color: #efefef;
+    font-size: 16px;
+}
+
+.ldp_2{
+    margin-top: 20px;
+}
+
+.ldp_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.about_luxedrive_btn, .customize_btn{
+    padding: 20px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+}
+
+
+.about_luxedrive_btn{
+    background-color: #ff2a009b;
+    color: #fff;
+    border: none;
+}
+
+.about_luxedrive_btn:hover{
+    background-color: #e61f29;
+}
+
+.customize_btn{
+    background-color: #181818;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.customize_btn:hover{
+    background-color: #fff;
+    color: #181818;
+}

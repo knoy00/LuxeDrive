@@ -15,11 +15,11 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    padding: 50px 70px;
 }
 
 .car_model_1{
     background-image: url('/images/GT63_hero.jpg');
-
 }
 
 .car_model_2{
