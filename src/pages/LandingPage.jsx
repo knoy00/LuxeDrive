@@ -5,6 +5,8 @@ import LuxeDrive from '../pages/LuxeDrive'
 import Brand from '../pages/Brand'
 import AllNew from '../pages/AllNew'
 import VisitShowroom from '../pages/VisitShowroom'
+import ChallengeEverything from '../pages/ChallengeEverything'
+import JoinUs from '../pages/JoinUs'
 
 import '../styles/pages/LandingPage.css'
 function LandinPage() {
@@ -17,6 +19,12 @@ function LandinPage() {
       <Brand />
       <AllNew />
       <VisitShowroom />
+      <ChallengeEverything />
+      <JoinUs />
+    
+
+      
+
     </div>
   )
 }
