@@ -1,10 +1,11 @@
 import "../styles/pages/GetToKnow.css";
-import { useState, useEffect } from "react";
-import { motion, useInView } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
+import {motion, useInView } from "framer-motion";
 
 function GetToKnow() {
 
-    
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once: true});
 
     const [openDes, setOpenDes] = useState(false);
     const [isPerformanceOpen, setIsPerformanceOpen] = useState(false);
@@ -66,12 +67,25 @@ function GetToKnow() {
     }
 
   return (
-    <div className="section-get-to-know">
+    <motion.div
+    ref={ref} 
+    initial={{ opacity: 0, y: 180 }}
+    animate={isInView ? {opacity: 1, y: 0} : {}}
+    transition={{duration: 1.4, ease: 'easeOut'}}
+    
+    className="section-get-to-know">
       <div className="gtk_header">
         <h1>Get to know the 911</h1>
         <div className="gtk-flex-container">
             <div className="gtk-flex">
-                <div className="gtk-card" onClick={handlePerformance}>
+                <motion.div 
+                    className="gtk-card" 
+                    onClick={handlePerformance}
+                    ref={ref} 
+                    initial={{ opacity: 0, y: 280 }}
+                    animate={isInView ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: 1.4, ease: 'easeOut'}}
+                >
                     <h2>Performance</h2>
                     <p>
                         The Porsche 911 is built for speed. With an all-new 4.0L V8 engine
@@ -80,9 +94,16 @@ function GetToKnow() {
                         <img src="/images/engine.jpg" alt="" />
                     </div>
                     
-                </div>
+                </motion.div>
                 
-                <div className="gtk-card" onClick={handleDesign}>
+                <motion.div
+                    className="gtk-card"
+                    onClick={handleDesign}
+                    ref={ref} 
+                    initial={{ opacity: 0, y: 400 }}
+                    animate={isInView ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: 2, ease: 'easeOut'}}
+                  >
                     <h2>Design</h2>
                     <p>
                         The 911 stays true to its classic design while continuously improving performance
@@ -91,9 +112,16 @@ function GetToKnow() {
                         <img src="/images/Porsche_aero.webp" alt="Porshe Red" />
                     </div>
                     
-                </div>
+                </motion.div>
 
-                <div className="gtk-card" onClick={handleAerodynamics}>
+                <motion.div
+                    className="gtk-card"
+                    onClick={handleAerodynamics}
+                    ref={ref} 
+                    initial={{ opacity: 0, y: 580 }}
+                    animate={isInView ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: 2.4, ease: 'easeOut'}}
+                  >
                     <h2>Aerodynamics </h2>
                     <p>
                         With Porsche’s advanced aerodynamics, the 911 delivers a smooth driving experience
@@ -102,9 +130,16 @@ function GetToKnow() {
                         <img src="/images/Porsche_yellow.jpg" alt="Porsche Yellow" />
                     </div>
                     
-                </div>
+                </motion.div>
 
-                <div className="gtk-card" onClick={handleSpeed}>
+                <motion.div 
+                    className="gtk-card" 
+                    onClick={handleSpeed}
+                    ref={ref} 
+                    initial={{ opacity: 0, y: 680 }}
+                    animate={isInView ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: 2.8, ease: 'easeOut'}}
+                >
                     <h2>Speed</h2>
                     <p>
                         The Porsche 911 is built for speed. With an all-new 4.0L V8 engine
@@ -113,13 +148,20 @@ function GetToKnow() {
                         <img src="/images/Porsche_track.avif" alt="" />
                     </div>
                     
-                </div>
+                </motion.div>
                 
             </div>
         </div>
       </div>
 
-      {openDes && <div className="gtk-expand-container">
+      {openDes && <motion.div 
+        className="gtk-expand-container"
+        ref={ref}
+        initial={{ opacity: 0, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: .2, ease: 'easeOut' }}
+        >
+    
         {isPerformanceOpen && <div className="gtk-expand-performance">
             <div className="gtk-ep-header">
                 <h1>Performance</h1>
@@ -209,8 +251,8 @@ function GetToKnow() {
                 </div>
             </div>
         </div>}
-      </div>}
-    </div>
+      </motion.div>}
+    </motion.div>
   )
 }
 

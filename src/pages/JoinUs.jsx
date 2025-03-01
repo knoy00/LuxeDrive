@@ -1,12 +1,8 @@
 import {motion, useInView, AnimatePresence} from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import '../styles/pages/JoinUs.css'
 
-import Signup from '../pages/Signup';
-
 function JoinUs() {
-
-    const [isOpen, setIsOpen] = useState(false);
 
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
@@ -14,7 +10,6 @@ function JoinUs() {
 
   return (
     <div className="join_us_wrapper">
-        <AnimatePresence>
         <div className='join_us'>
 
             <div className="join_us_img">
@@ -38,7 +33,6 @@ function JoinUs() {
                 </p>
             </motion.div>
         </div>
-        </AnimatePresence>
     </div>
   )
 }

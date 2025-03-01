@@ -15,7 +15,7 @@ const ChallengeEverything = () => {
     return scaleDown.get();
   });
 
-  const borderRadius = useTransform(scrollY, [9695, 10225], [50, 0]);
+  const borderRadius = useTransform(scrollY, [10195, 10225], [50, 0]);
 
   useEffect(() => {
     scrollY.onChange(() => {
