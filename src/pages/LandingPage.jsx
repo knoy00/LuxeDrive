@@ -7,6 +7,11 @@ import AllNew from '../pages/AllNew'
 import VisitShowroom from '../pages/VisitShowroom'
 import ChallengeEverything from '../pages/ChallengeEverything'
 import JoinUs from '../pages/JoinUs'
+import BuildInfo from '../pages/BuildInfo'
+import Expandd from '../pages/Expandd'
+import Signup from '../pages/Signup'
+import GetToKnow from '../pages/GetToKnow'
+
 
 import '../styles/pages/LandingPage.css'
 function LandinPage() {
@@ -14,6 +19,7 @@ function LandinPage() {
     <div className='landing_page'>
       <Navbar />
       <Hero />
+      <BuildInfo />
       <Models />
       <LuxeDrive />
       <Brand />
@@ -21,9 +27,8 @@ function LandinPage() {
       <VisitShowroom />
       <ChallengeEverything />
       <JoinUs />
+      <GetToKnow />
     
-
-      
 
     </div>
   )
