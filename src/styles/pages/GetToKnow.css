@@ -1,9 +1,11 @@
 .section-get-to-know{
     width: 100%;
-    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
     margin-top: 0;
     background-color: #ffffff;
+    overflow: hidden;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    
 }
 
 .gtk_header{
@@ -15,7 +17,9 @@
 .gtk_header h1{
     font-size: 52px;
     font-weight: 600;
-    color: #888888;
+    color: #000000;
+    padding: 0 35px;
+    letter-spacing: -.022em;
 }
 
 .gtk-flex-container{
@@ -28,7 +32,6 @@
     gap: 50px;
     margin-top: 40px;
     width: 100%;
-    
 }
 
 .gtk-card{
@@ -65,6 +68,7 @@
     bottom: 80px;
     padding: 10px;
     z-index: 5;
+    letter-spacing: -.022em;
 }
 
 .gtk-card p{
@@ -75,6 +79,8 @@
     bottom: 30px;
     z-index: 5;
     padding: 10px;
+    line-height: 1.4705882353;
+    letter-spacing: -.022em;
 }
 
 .gtk-card-image{
@@ -174,10 +180,10 @@ background-color: #efefef;    margin-bottom: 20px;
 }
 
 .gtk-ep-description p{
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: 400;
-    color: #484848;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
     padding: 0 30px;
     width: 100%;
 }

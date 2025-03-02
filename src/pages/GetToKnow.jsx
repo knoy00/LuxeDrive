@@ -5,13 +5,26 @@ import {motion, useInView } from "framer-motion";
 function GetToKnow() {
 
     const ref = useRef(null);
+    const ref2 = useRef(null);
+    const ref3 = useRef(null);
+    const ref4 = useRef(null);
     const isInView = useInView(ref, {once: true});
+    const isInView2 = useInView(ref2, {once: true});
+    const isInView3 = useInView(ref3, {once: true});
+    const isInView4 = useInView(ref4, {once: true});
 
     const [openDes, setOpenDes] = useState(false);
-    const [isPerformanceOpen, setIsPerformanceOpen] = useState(false);
-    const [isDesignOpen, setIsDesignOpen] = useState(false);
-    const [isAerodynamicsOpen, setIsAerodynamicsOpen] = useState(false);
-    const [isSpeedOpen, setIsSpeedOpen] = useState(false);
+    const [openSection, setOpenSection] = useState(null)
+
+    const handleSection = (section) => {
+        setOpenSection(section);
+        setOpenDes(true)
+    }
+
+    const handleClose = () => {
+        setOpenDes(false);
+        setOpenSection(null);
+    }
 
     useEffect(() => {
         if(openDes){
@@ -22,56 +35,12 @@ function GetToKnow() {
         }
     }, [openDes])
 
-    const handlePerformance = () => {
-        setIsPerformanceOpen(true);
-        setIsDesignOpen(false);
-        setIsAerodynamicsOpen(false);
-        setIsSpeedOpen(false);
-        setOpenDes(true);
-    }
-
-    const handleDesign =() => {
-        setIsDesignOpen(true);
-        setIsPerformanceOpen(false);
-        setIsAerodynamicsOpen(false);
-        setIsSpeedOpen(false);
-        setOpenDes(true);
-
-    }
-
-    const handleAerodynamics =() => {
-        setIsAerodynamicsOpen(true);
-        setIsPerformanceOpen(false);
-        setIsDesignOpen(false);
-        setIsSpeedOpen(false);
-        setOpenDes(true);
-
-    }
-
-    const handleSpeed = () => {
-        setIsSpeedOpen(true);
-        setIsPerformanceOpen(false);
-        setIsDesignOpen(false);
-        setIsAerodynamicsOpen(false);
-        setOpenDes(true);
-
-    }
-
-    const handleClose = () => {
-        setOpenDes(false);
-        setIsPerformanceOpen(false);
-        setIsDesignOpen(false);
-        setIsAerodynamicsOpen(false);
-        setIsSpeedOpen(false);
-        setOpenDes(false);
-    }
+    
 
   return (
     <motion.div
     ref={ref} 
-    initial={{ opacity: 0, y: 180 }}
-    animate={isInView ? {opacity: 1, y: 0} : {}}
-    transition={{duration: 1.4, ease: 'easeOut'}}
+    
     
     className="section-get-to-know">
       <div className="gtk_header">
@@ -80,29 +49,29 @@ function GetToKnow() {
             <div className="gtk-flex">
                 <motion.div 
                     className="gtk-card" 
-                    onClick={handlePerformance}
+                    onClick={() => handleSection('performance')}
                     ref={ref} 
-                    initial={{ opacity: 0, y: 280 }}
+                    initial={{ opacity: 0, y: 70 }}
                     animate={isInView ? {opacity: 1, y: 0} : {}}
-                    transition={{duration: 1.4, ease: 'easeOut'}}
+                    transition={{duration: .7, ease: 'easeOut'}}
                 >
                     <h2>Performance</h2>
                     <p>
                         The Porsche 911 is built for speed. With an all-new 4.0L V8 engine
                     </p>
                     <div className="gtk-card-image">
-                        <img src="/images/engine.jpg" alt="" />
+                        <img src="/images/engine.jpg" alt="Engine" />
                     </div>
                     
                 </motion.div>
                 
                 <motion.div
                     className="gtk-card"
-                    onClick={handleDesign}
-                    ref={ref} 
-                    initial={{ opacity: 0, y: 400 }}
-                    animate={isInView ? {opacity: 1, y: 0} : {}}
-                    transition={{duration: 2, ease: 'easeOut'}}
+                    onClick={() => handleSection('design')}
+                    ref={ref2} 
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={isInView2 ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: .7, ease: 'easeOut'}}
                   >
                     <h2>Design</h2>
                     <p>
@@ -116,11 +85,11 @@ function GetToKnow() {
 
                 <motion.div
                     className="gtk-card"
-                    onClick={handleAerodynamics}
-                    ref={ref} 
-                    initial={{ opacity: 0, y: 580 }}
-                    animate={isInView ? {opacity: 1, y: 0} : {}}
-                    transition={{duration: 2.4, ease: 'easeOut'}}
+                    onClick={()=> handleSection('aerodynamics')}
+                    ref={ref3} 
+                    initial={{ opacity: 0, y: 70 }}
+                    animate={isInView3 ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: .8, ease: 'easeOut'}}
                   >
                     <h2>Aerodynamics </h2>
                     <p>
@@ -134,11 +103,11 @@ function GetToKnow() {
 
                 <motion.div 
                     className="gtk-card" 
-                    onClick={handleSpeed}
-                    ref={ref} 
-                    initial={{ opacity: 0, y: 680 }}
-                    animate={isInView ? {opacity: 1, y: 0} : {}}
-                    transition={{duration: 2.8, ease: 'easeOut'}}
+                    onClick={()=> handleSection('speed')}
+                    ref={ref4} 
+                    initial={{ opacity: 0, y: 70 }}
+                    animate={isInView4 ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: .8, ease: 'easeOut'}}
                 >
                     <h2>Speed</h2>
                     <p>
@@ -162,7 +131,7 @@ function GetToKnow() {
         transition={{ duration: .2, ease: 'easeOut' }}
         >
     
-        {isPerformanceOpen && <div className="gtk-expand-performance">
+        {openSection === 'performance' && <div className="gtk-expand-performance">
             <div className="gtk-ep-header">
                 <h1>Performance</h1>
                 <div className="gtk_close" onClick={handleClose}>
@@ -184,7 +153,7 @@ function GetToKnow() {
                 </div>
             </div>
         </div>}
-       {isDesignOpen && <div className="gtk-expand-performance">
+       {openSection === 'design' && <div className="gtk-expand-performance">
             <div className="gtk-ep-header">
                 <h1>Design</h1>
                 <div className="gtk_close" onClick={handleClose}>
@@ -207,7 +176,7 @@ function GetToKnow() {
             </div>
         </div>}
 
-        {isAerodynamicsOpen &&<div className="gtk-expand-performance">
+        {openSection === 'aerodynamics' &&<div className="gtk-expand-performance">
             <div className="gtk-ep-header">
                 <h1>Aerodynamcis</h1>
                 <div className="gtk_close" onClick={handleClose}>
@@ -229,7 +198,7 @@ function GetToKnow() {
                 </div>
             </div>
         </div>}
-        {isSpeedOpen && <div className="gtk-expand-performance">
+        {openSection === 'speed' && <div className="gtk-expand-performance">
             <div className="gtk-ep-header">
                 <h1>Speed</h1>
                 <div className="gtk_close" onClick={handleClose}>

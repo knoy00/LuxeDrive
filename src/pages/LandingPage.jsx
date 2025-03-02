@@ -11,6 +11,8 @@ import BuildInfo from '../pages/BuildInfo'
 import Expandd from '../pages/Expandd'
 import Signup from '../pages/Signup'
 import GetToKnow from '../pages/GetToKnow'
+import ServiceModule from '../pages/ServiceModule'
+import Footer from '../components/Footer'
 
 
 import '../styles/pages/LandingPage.css'
@@ -28,6 +30,9 @@ function LandinPage() {
       <ChallengeEverything />
       <JoinUs />
       <GetToKnow />
+      <ServiceModule />
+      <Footer />
+
     
 
     </div>

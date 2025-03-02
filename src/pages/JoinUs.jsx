@@ -21,7 +21,7 @@ function JoinUs() {
             ref={ref}
             initial={{ opacity: 0, y: 250 }}
             animate={isInView ? { opacity: 1, y: 0 } :{} }
-            transition={{ duration: 1.5, ease: 'easeOut' }}
+            transition={{ duration: 1.5, ease: 'linear' }}
             >
                 <div className="divider"></div>
                 <h1>The search for a new Porsche 911 is over</h1>
