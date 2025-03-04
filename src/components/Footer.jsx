@@ -1,4 +1,5 @@
 import '../styles/components/Footer.css'
+import '../styles/components/Media Queries/Footer-mq.css'
 
 import { Link } from 'react-router-dom'
 

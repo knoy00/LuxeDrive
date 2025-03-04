@@ -1,11 +1,11 @@
 import '../styles/pages/ServiceModule.css'
+import '../styles/pages/Media Queries/ServiceModule-mq.css'
 import { Link } from 'react-router-dom';
 
 const ShoppingBagIcon = () => {
     return (
       <svg
-        width="100"
-        height="100"
+        
         viewBox="15 0 60 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

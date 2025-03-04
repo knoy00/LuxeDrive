@@ -14,7 +14,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .service_module_item {
@@ -23,7 +22,6 @@
     align-items: center;
     justify-content: center;
     width: 300px;
-    min-width: 280px;
     height: 300px;
     padding: 20px;
     border-radius: 30px;
@@ -40,6 +38,11 @@
 
 .service_module_item img, .service_module_item svg{
     padding-bottom: 20px;
+}
+
+.service_module_item svg{
+    width: 100px;
+    height: 100px;
 }
 
 .service_module_item h2{
