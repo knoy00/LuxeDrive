@@ -115,7 +115,7 @@ function GetToKnow() {
                         The Porsche 911 is built for speed. With an all-new 4.0L V8 engine
                     </p>
                     <div className="gtk-card-image">
-                        <img src="/images/Porsche_track.avif" alt="" />
+                        <img src="/images/Porsche_track.avif" alt="Porsche On Track" />
                     </div>
                     
                 </motion.div>
@@ -150,7 +150,7 @@ function GetToKnow() {
                     The Porsche 911 is a masterpiece of performance engineering, blending speed, precision, and agility in a way few cars can match. Equipped with a twin-turbocharged flat-six engine, the latest models produce up to 640 horsepower in the Turbo S variant, launching from 0 to 60 mph in just 2.6 seconds. 
                 </p>
                 <div className="gtk-ep-image">
-                    <img src="/images/engine.jpg" alt="" />
+                    <img src="/images/engine.jpg" alt="Porsche Engine" />
                 </div>
             </div>
         </div>}
@@ -172,7 +172,7 @@ function GetToKnow() {
                     The Porsche 911 is a perfect fusion of heritage and innovation. Its unmistakable silhouette, with flowing curves and a wide stance, has evolved over decades while staying true to its DNA. Every line is sculpted for both aesthetics and aerodynamics, enhancing speed and stability at high velocity. Signature elements like the sloping roofline, muscular rear haunches, and iconic round headlights make it instantly recognizable. 
                 </p>
                 <div className="gtk-ep-image">
-                    <img src="/images/Porsche_aero.webp" alt="" />
+                    <img src="/images/Porsche_aero.webp" alt="Porsche" />
                 </div>
             </div>
         </div>}
@@ -195,7 +195,7 @@ function GetToKnow() {
                     Every inch of the Porsche 911 is engineered for aerodynamic excellence. From its sleek, low-slung profile to its adaptive rear spoiler, every detail is designed to reduce drag and maximize downforce. Active aerodynamics, including variable cooling flaps and a retractable wing, optimize airflow for both     efficiency and stability at high speeds. 
                 </p>
                 <div className="gtk-ep-image">
-                    <img src="/images/Porsche_yellow.jpg" alt="" />
+                    <img src="/images/Porsche_yellow.jpg" alt="Porsche Yellow Car" />
                 </div>
             </div>
         </div>}
@@ -217,7 +217,7 @@ function GetToKnow() {
                     The twin-turbo flat-six delivers relentless acceleration, launching from 0 to 60 mph in just 2.6 seconds. Every component is fine-tuned for velocity, from the aerodynamic bodywork that slices through the air to the lightning-fast PDK transmission that keeps power flowing seamlessly. Whether on the autobahn or the racetrack, the 911 doesn’t just chase speed—it owns it. 
                 </p>
                 <div className="gtk-ep-image">
-                    <img src="/images/Porsche_track.avif" alt="" />
+                    <img src="/images/Porsche_track.avif" alt="Porsche Track" />
                 </div>
             </div>
         </div>}

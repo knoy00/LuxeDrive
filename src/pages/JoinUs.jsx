@@ -1,4 +1,4 @@
-import {motion, useInView, AnimatePresence} from 'framer-motion'
+import {motion, useInView} from 'framer-motion'
 import { useRef } from 'react'
 import '../styles/pages/JoinUs.css'
 import '../styles/pages/Media Queries/JoinUs-mq.css'
