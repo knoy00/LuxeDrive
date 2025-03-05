@@ -1,12 +1,5 @@
-/* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
-    /* Styles for extra small screens */
-
-    .service_module{
-        background-color: rgb(107, 128, 0);
-        
-      
-    }
+   
     .service_module_inner{
         margin: auto;
         padding: 40px 20px;
@@ -24,7 +17,6 @@
         border-radius: 0;
         border-bottom: 1px solid #292929;
     }
-    
 
     .service_module_item h2{
        font-size: 20px;
@@ -40,14 +32,7 @@
     }
 }
   
-  /* Small devices (phones, 576px and up) */
   @media (min-width: 576px) and (max-width: 767.98px) {
-    /* Styles for small screens */
-    .service_module{
-        background-color: rgb(116, 25, 243);
-      
-    }
-
     .service_module_item{
         height: 200px;
     }
@@ -59,29 +44,17 @@
     .service_module_item a{
         font-size: 17px;
     }
-
-    
   }
   
-  /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) and (max-width: 991.98px) {
-    /* Background change */
-    .service_module {
-        background-color: rgb(0, 206, 203);
-    }
-
-    /* Adjust container padding */
     .service_module_inner {
         padding: 15px;
     }
 
-    /* Reduce spacing between items */
     .service_module_list {
-/* Allow items to stack if needed */
-        justify-content: center; /* Center align items */
+        justify-content: center; 
     }
 
-    /* Reduce item size for medium screens */
     .service_module_item {
         width: 260px;
         min-width: 250px;
@@ -90,13 +63,11 @@
         border-radius: 20px;
     }
 
-    /* Make SVG smaller */
     .service_module_item svg {
         width: 100px;
         height: 100px;
     }
 
-    /* Adjust heading and text size */
     .service_module_item h2 {
         font-size: 22px;
     }
@@ -105,20 +76,13 @@
         font-size: 16px;
     }
 }
-
   
-  /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    /* Styles for large screens */
   }
   
-  /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) and (max-width: 1399.98px) {
-    /* Styles for extra large screens */
   }
   
-  /* Extra extra large devices (very large screens, 1400px and up) */
   @media (min-width: 1400px) {
-    /* Styles for ultra-wide screens */
   }
   

@@ -24,7 +24,7 @@ function JoinUs() {
             animate={isInView ? { opacity: 1, y: 0 } :{} }
             transition={{ duration: 1.5, ease: 'linear' }}
             >
-                <div className="divider"></div>
+                <div className="seperator"></div>
                 <h1>The search for a new Porsche 911 is over</h1>
                 <p>Join our team and become a part of the Porsche 911 family</p>
                 <button>Join now</button>

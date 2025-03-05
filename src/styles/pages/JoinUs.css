@@ -41,8 +41,8 @@
     font-size: 18px;
 }
 
-.join_us_text .divider{
-    width: 70%;
+.join_us_text .seperator{
+    width: 100%;
     background-color: #d70000;
     height: 2px;
     margin-bottom: 30px;
