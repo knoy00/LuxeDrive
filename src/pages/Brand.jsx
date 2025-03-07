@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import '../styles/pages/Brand.css'
+import '../styles/pages/Media Queries/Brand-mq.css'
 
 function Brand() {
   return (
