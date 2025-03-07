@@ -1,32 +1,30 @@
-@media  (max-width: 575.98px) {
+@media  (max-width: 575.98px){
     .build_info{
-        background-color: red
-    };
+        display: none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .build_info{
-        background-color: blue
-    };
+        display: none;
+
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .build_info{
-        background-color: green
-    };
+        display: none;
+
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .build_info{
-        background-color: yellow
-    };
+    .info_wrapper{
+        padding: 40px 30px;
+    }
+
+    .info{
+        font-size: 16px;
+    }
 }
 
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-    .build_info{
-        background-color: orange
-    };
-}
-
-@media (min-width: 1400px) {
-}
