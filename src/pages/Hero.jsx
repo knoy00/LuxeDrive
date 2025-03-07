@@ -1,4 +1,5 @@
 import '../styles/pages/Hero.css'
+import '../styles/pages/Media Queries/Hero-mq.css'
 import Navbar from '../components/Navbar'
 import { motion } from 'framer-motion'
 
@@ -11,7 +12,7 @@ function Hero() {
         className='hero_text'
          initial={{ opacity: 0, y: -150 }}
          animate={{ opacity: 1, y: 150 }}
-         transition={{ duration: 2, ease: "easeOut" }} 
+         transition={{ duration: 2, ease: "easeOut", delay: .5 }} 
         >
             <h1>Experience the Future of Automobiles</h1>
             <h2>Next-Level Engineering for Next-Level Journeys</h2>

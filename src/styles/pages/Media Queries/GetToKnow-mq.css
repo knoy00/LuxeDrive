@@ -1,0 +1,495 @@
+/* RESPONSIVENESS */
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Styles for extra small screens */
+  .section-get-to-know{
+    background-color: red;
+  }
+  
+  .gtk_header{
+      padding: 10px;
+  }
+  
+  .gtk_header h1{
+      font-size: 32px;
+      font-weight: 500;
+  }
+  .gtk-flex-container{
+      padding: 10px;
+      width: 100%;
+      overflow-x: scroll;
+  }
+  .gtk-flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+  .gtk-card{
+    width: 300px;
+    height: 450px;
+  }
+  .gtk-card h2{
+    font-size: 25px;
+  }
+  .gtk-card p{
+    font-size: 14px;
+  }
+  .gtk-ep-subHeader{
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .gtk-card-image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .gtk-expand-container{
+    padding: 0px;
+    overflow-y: hidden;
+  }
+
+
+  .gtk-ep-subHeader h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #222222;
+    display: none;
+  }
+
+  .gtk-ep-description p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #747474;
+    padding: 0 30px;
+    width: 100%;
+}
+
+  .gtk-expand-performance{
+    background-color: #ffffff;   
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    /* position: absolute;
+    top: 50px; */
+  }
+
+  .gtk-ep-description{
+    background-color: #efefef;    
+    margin-bottom: 20px;
+    padding: 30px 10px;
+    border-radius: 30px;
+  }
+
+  .gtk-ep-image img{
+    width: 90%;
+    border-radius: 20px;
+
+  }
+
+  .gtk_close{
+    width: 30px;
+    height: 30px;
+  }
+}
+  
+  /* Small devices (phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    /* Styles for small screens */
+    .section-get-to-know{
+      background-color: yellow;
+    }
+    .gtk_header{
+      padding: 10px;
+  }
+  
+  .gtk_header h1{
+      font-size: 32px;
+      font-weight: 400;
+  }
+
+  .gtk-flex-container{
+      padding: 10px;
+      width: 100%;
+      overflow-x: scroll;
+  }
+
+  .gtk-flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+  }
+
+  .gtk-card{
+    width: 300px;
+    height: 550px;
+  }
+
+  .gtk-card h2{
+    font-size: 29px;
+  }
+
+  .gtk-card p{
+    font-size: 15px;
+  }
+
+  .gtk-card-image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .gtk-expand-container{
+    padding: 0px;
+    overflow-y: hidden;
+  }
+
+
+  .gtk-ep-subHeader h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #222222;
+    display: none;
+  }
+
+  .gtk-ep-description p{
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #747474;
+    padding: 0 30px;
+    width: 100%;
+}
+
+  .gtk-expand-performance{
+    background-color: #ffffff;   
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    /* position: absolute;
+    top: 50px; */
+  }
+
+  .gtk-ep-description{
+    background-color: #efefef;    
+    margin-bottom: 20px;
+    padding: 30px 10px;
+    border-radius: 30px;
+  }
+
+  .gtk-ep-image img{
+    width: 90%;
+    border-radius: 20px;
+
+  }
+
+  .gtk_close{
+    width: 30px;
+    height: 30px;
+  }
+}
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Styles for medium screens */
+    .section-get-to-know{
+      background-color: green;
+    }
+    .gtk_header{
+      padding: 10px;
+  }
+  
+  .gtk_header h1{
+      font-size: 32px;
+      font-weight: 600;
+  }
+
+  .gtk-flex-container{
+      padding: 10px;
+      width: 100%;
+      overflow-x: scroll;
+  }
+
+  .gtk-flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+
+  }
+
+  .gtk-card{
+    width: 300px;
+    height: 600px;
+  }
+
+  .gtk-card h2{
+    font-size: 25px;
+  }
+
+  .gtk-card p{
+    font-size: 14px;
+  }
+
+  .gtk-card-image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .gtk-expand-container{
+    padding: 0px;
+    overflow-y: hidden;
+  }
+
+
+  .gtk-ep-subHeader h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #222222;
+  }
+
+  .gtk-ep-description p{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #747474;
+    padding: 0 30px;
+    width: 100%;
+}
+
+  .gtk-expand-performance{
+    background-color: #ffffff;   
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    /* position: absolute;
+    top: 50px; */
+  }
+
+  .gtk-ep-description{
+    background-color: #efefef;    
+    margin-bottom: 20px;
+    padding: 30px 10px;
+    border-radius: 30px;
+  }
+
+  .gtk-ep-image img{
+    width: 90%;
+    border-radius: 20px;
+
+  }
+
+  .gtk_close{
+    width: 30px;
+    height: 30px;
+  }
+}
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Styles for large screens */
+    .section-get-to-know{
+      background-color: orange;
+    }
+    .gtk_header{
+      padding: 10px;
+  }
+  
+  .gtk_header h1{
+      font-size: 32px;
+      font-weight: 500;
+  }
+
+  .gtk-flex-container{
+      padding: 10px;
+      width: 100%;
+      overflow-x: scroll;
+  }
+
+  .gtk-flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+
+  }
+
+  .gtk-card{
+    width: 320px;
+    height: 600px;
+  }
+
+  .gtk-card h2{
+    font-size: 25px;
+  }
+
+  .gtk-card p{
+    font-size: 15px;
+  }
+
+  .gtk-card-image{
+    width: 100%;
+    height: 100%;
+
+
+}
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* Styles for extra large screens */
+    .section-get-to-know{
+      background-color: pink;
+    }
+    .gtk_header{
+      padding: 10px;
+  }
+  
+  .gtk_header h1{
+      font-size: 43px;
+      font-weight: 600;
+  }
+
+  .gtk-flex-container{
+      padding: 10px;
+      width: 100%;
+      overflow-x: scroll;
+  }
+
+  .gtk-flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+
+  }
+
+  .gtk-card{
+    width: 350px;
+    height: 650px;
+  }
+
+  .gtk-card h2{
+    font-size: 25px;
+  }
+
+  .gtk-card p{
+    font-size: 15px;
+  }
+
+  .gtk-card-image{
+    width: 100%;
+    height: 100%;
+
+
+}
+  }
+  
+  /* Extra extra large devices (very large screens, 1400px and up) */
+  @media (min-width: 1400px) and (max-width: 1799.98px) {
+    /* Styles for ultra-wide screens */
+    .section-get-to-know{
+      background-color: purple;
+    }
+    .gtk_header{
+      padding: 10px;
+  }
+  
+  .gtk_header h1{
+      font-size: 43px;
+      font-weight: 500;
+  }
+
+  .gtk-flex-container{
+      padding: 10px;
+      width: 100%;
+      overflow-x: scroll;
+  }
+
+  .gtk-flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+
+  }
+
+  .gtk-card{
+    width: 400px;
+    height: 600px;
+  }
+
+  .gtk-card h2{
+    font-size: 28px;
+  }
+
+  .gtk-card p{
+    font-size: 17px;
+  }
+
+  .gtk-card-image{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  /* This targets landscape mode on smaller devices */
+  .section-get-to-know{
+  }
+  
+  .gtk_header{
+      padding: 5px 10px;
+  }
+  
+  .gtk_header h1{
+      font-size: 32px;
+      font-weight: 400;
+  }
+
+  .gtk-flex-container{
+      padding: 10px;
+      width: 100%;
+      overflow-x: scroll;
+  }
+
+  .gtk-flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+
+  }
+
+  .gtk-card{
+    width: 300px;
+    height: 450px;
+  }
+
+  .gtk-card h2{
+    font-size: 25px;
+  }
+
+  .gtk-card p{
+    font-size: 14px;
+  }
+
+  .gtk-card-image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .gtk-expand-container{
+    width: 100%;
+    padding: 35px 60px;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    height: 100vh;
+    transition: .5s ease;
+}
+}
+
+  

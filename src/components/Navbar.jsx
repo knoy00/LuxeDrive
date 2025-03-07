@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/components/Navbar.css";
+import "../styles/components/Media Queries/Navbar-mq.css";
+import { FaUser } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -9,10 +11,12 @@ const Navbar = () => {
       <p>Menu</p>
 
       <div className="logo">
-        <h2>LuxeDrive</h2>
+        <img src="/public/images/Logos/LuxeDrive_logo.png" alt="Logo" />
       </div>
 
-      <div className="user"></div>
+      <div className="user">
+        <FaUser />
+      </div>
     </nav>
   );
 };

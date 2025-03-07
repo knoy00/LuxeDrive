@@ -127,3 +127,25 @@
   @media (min-width: 1400px) {
   }
   
+
+  @media screen and (max-height: 500px) and (orientation: landscape) {
+    .footer_inner{
+        padding: 10px 15px;
+    }
+
+    .footer_flex_item h2{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .footer_flex_item p{
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .footer_flex_item button{
+        font-size: 10px;
+        width: 50%;
+    }
+  }
+  

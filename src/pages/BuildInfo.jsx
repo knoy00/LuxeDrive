@@ -1,4 +1,5 @@
 import '../styles/pages/BuildInfo.css'
+import '../styles/pages/Media Queries/BuildInfo-mq.css'
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'

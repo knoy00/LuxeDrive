@@ -117,7 +117,7 @@ body.no-scroll{
 }
 
 .gtk-expand-performance{
-background-color: #fff;    width: 60%;
+    background-color: #fff;    width: 60%;
     padding: 20px 70px;
     border-radius: 20px;
 }
@@ -174,8 +174,8 @@ background-color: #fff;    width: 60%;
 }
 
 .gtk-ep-description{
-
-background-color: #efefef;    margin-bottom: 20px;
+    background-color: #efefef;    
+    margin-bottom: 20px;
     padding: 30px 60px;
     border-radius: 30px;
 }

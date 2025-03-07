@@ -4,6 +4,7 @@ import Models from '../pages/Models'
 import LuxeDrive from '../pages/LuxeDrive'
 import Brand from '../pages/Brand'
 import AllNew from '../pages/AllNew'
+import ImageWithSkeleton from '../pages/ImageWithSkeleton'
 import VisitShowroom from '../pages/VisitShowroom'
 import ChallengeEverything from '../pages/ChallengeEverything'
 import JoinUs from '../pages/JoinUs'
@@ -23,9 +24,10 @@ function LandinPage() {
       <Hero />
       <BuildInfo />
       <Models />
-      <LuxeDrive />
+      {/* <LuxeDrive /> */}
       <Brand />
-      <AllNew />
+      {/* <AllNew /> */}
+      <ImageWithSkeleton />
       <VisitShowroom />
       <ChallengeEverything />
       <JoinUs />

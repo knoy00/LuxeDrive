@@ -1,8 +1,11 @@
-
+import { useState } from "react";
 import "../styles/pages/Models.css";
 
 function Models() {
-  return (
+
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+   return (
     <div className="models">
         <h1>Our Latest Models</h1>
       <div className="car_models_wrapper">

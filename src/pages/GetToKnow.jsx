@@ -1,5 +1,5 @@
 import "../styles/pages/GetToKnow.css";
-import "../styles/pages/Media Queries/GetToKnow.css";
+import "../styles/pages/Media Queries/GetToKnow-mq.css";
 import { useState, useEffect, useRef } from "react";
 import {motion, useInView } from "framer-motion";
 

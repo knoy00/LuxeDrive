@@ -5,16 +5,16 @@ import { useEffect } from "react";
 const ChallengeEverything = () => {
   const { scrollY } = useScroll();
 
-  const scaleUp = useTransform(scrollY, [9695, 10225], [1, 1.586]);
+  const scaleUp = useTransform(scrollY, [3585, 4248], [1.15, 1.5]);
 
-  const scaleDown = useTransform(scrollY, [10910, 11120], [1.586, 1.3]);
+  const scaleDown = useTransform(scrollY, [4448, 4800], [1.5, 1.4]);
 
   const scale = useTransform(scrollY, (latest) => {
-    if (latest < 10427) return scaleUp.get();
+    if (latest < 4348) return scaleUp.get();
     return scaleDown.get();
   });
 
-  const borderRadius = useTransform(scrollY, [10195, 10225], [50, 0]);
+  const borderRadius = useTransform(scrollY, [3585, 4248], [50, 5]);
 
   useEffect(() => {
     scrollY.onChange(() => {
