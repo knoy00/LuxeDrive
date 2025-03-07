@@ -1,4 +1,5 @@
 import '../styles/pages/VisitShowroom.css'
+import '../styles/pages/Media Queries/VisitShowroom-mq.css'
 function VisitShowroom() {
   return (
     <div className='showroom'>
