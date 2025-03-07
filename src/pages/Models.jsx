@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/pages/Models.css";
+import "../styles/pages/Media Queries/Models-mq.css";
 
 function Models() {
 
