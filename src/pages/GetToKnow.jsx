@@ -5,6 +5,7 @@ import {motion, useInView } from "framer-motion";
 
 function GetToKnow() {
 
+    const containerRef = useRef(null);
     const ref = useRef(null);
     const ref2 = useRef(null);
     const ref3 = useRef(null);
@@ -40,7 +41,7 @@ function GetToKnow() {
 
   return (
     <motion.div
-    ref={ref} 
+    ref={containerRef} 
     
     
     className="section-get-to-know">
@@ -52,9 +53,9 @@ function GetToKnow() {
                     className="gtk-card" 
                     onClick={() => handleSection('performance')}
                     ref={ref} 
-                    initial={{ opacity: 0, y: 70 }}
+                    initial={{ opacity: 0, y: 120 }}
                     animate={isInView ? {opacity: 1, y: 0} : {}}
-                    transition={{duration: .7, ease: 'easeOut'}}
+                    transition={{duration: .2, ease: 'linear'}}
                 >
                     <h2>Performance</h2>
                     <p>
@@ -70,9 +71,9 @@ function GetToKnow() {
                     className="gtk-card"
                     onClick={() => handleSection('design')}
                     ref={ref2} 
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0, y: 120 }}
                     animate={isInView2 ? {opacity: 1, y: 0} : {}}
-                    transition={{duration: .7, ease: 'easeOut'}}
+                    transition={{duration: .4, ease: 'easeOut'}}
                   >
                     <h2>Design</h2>
                     <p>
@@ -88,9 +89,9 @@ function GetToKnow() {
                     className="gtk-card"
                     onClick={()=> handleSection('aerodynamics')}
                     ref={ref3} 
-                    initial={{ opacity: 0, y: 70 }}
+                    initial={{ opacity: 0, y: 120 }}
                     animate={isInView3 ? {opacity: 1, y: 0} : {}}
-                    transition={{duration: .8, ease: 'easeOut'}}
+                    transition={{duration: .6, ease: 'easeOut'}}
                   >
                     <h2>Aerodynamics </h2>
                     <p>
@@ -106,7 +107,7 @@ function GetToKnow() {
                     className="gtk-card" 
                     onClick={()=> handleSection('speed')}
                     ref={ref4} 
-                    initial={{ opacity: 0, y: 70 }}
+                    initial={{ opacity: 0, y: 120 }}
                     animate={isInView4 ? {opacity: 1, y: 0} : {}}
                     transition={{duration: .8, ease: 'easeOut'}}
                 >

@@ -2,20 +2,32 @@ import { Link } from "react-router-dom";
 import "../styles/components/Navbar.css";
 import "../styles/components/Media Queries/Navbar-mq.css";
 import { FaUser } from "react-icons/fa";
+import { FaBars} from "react-icons/fa"
+
 
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       
-      <p>Menu</p>
+      <div>
+        <FaBars
+          className="nav_icon" 
+          size={25}
+          color="white"
+        />
+      </div>
 
       <div className="logo">
-        <img src="/images/Logos/LuxeDrive_logo.png" alt="Logo" />
+        <Link to='/'><img src="/images/Logos/LuxeDrive_logo.png" alt="Logo" /></Link>
       </div>
 
       <div className="user">
-        <FaUser />
+        <FaUser
+          className="nav_icon"
+          size={25}
+          color="white" 
+        />
       </div>
     </nav>
   );
