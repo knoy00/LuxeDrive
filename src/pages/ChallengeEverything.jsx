@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import "../styles/pages/ChallengeEverything.css";
+import "../styles/pages/Media Queries/ChallengeEverything-mq.css";
 import { useEffect } from "react";
 
 const ChallengeEverything = () => {

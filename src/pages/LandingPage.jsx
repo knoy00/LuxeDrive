@@ -11,6 +11,7 @@ import JoinUs from '../pages/JoinUs'
 import BuildInfo from '../pages/BuildInfo'
 import Expandd from '../pages/Expandd'
 import Signup from '../pages/Signup'
+import BentoGrid from '../pages/BentoGrid'
 import GetToKnow from '../pages/GetToKnow'
 import ServiceModule from '../pages/ServiceModule'
 import Footer from '../components/Footer'
@@ -24,18 +25,14 @@ function LandinPage() {
       <Hero />
       <BuildInfo />
       <Models />
-      {/* <LuxeDrive /> */}
       <Brand />
-      {/* <AllNew /> */}
       <VisitShowroom />
       <ChallengeEverything />
       <JoinUs />
       <GetToKnow />
+      <BentoGrid />
       <ServiceModule />
       <Footer />
-
-    
-
     </div>
   )
 }

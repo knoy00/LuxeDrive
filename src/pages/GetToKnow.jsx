@@ -10,6 +10,7 @@ function GetToKnow() {
     const ref2 = useRef(null);
     const ref3 = useRef(null);
     const ref4 = useRef(null);
+    const containerInInview = useInView(containerRef, {once: true});
     const isInView = useInView(ref, {once: true});
     const isInView2 = useInView(ref2, {once: true});
     const isInView3 = useInView(ref3, {once: true});
@@ -42,7 +43,9 @@ function GetToKnow() {
   return (
     <motion.div
     ref={containerRef} 
-    
+    initial={{opacity: 0, y: 100}}
+    animate={containerInInview ? {opacity:1, y:0} : {}}
+    transition={{duration: .3, ease: 'linear'}}
     
     className="section-get-to-know">
       <div className="gtk_header">

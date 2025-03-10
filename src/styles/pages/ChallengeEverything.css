@@ -2,7 +2,6 @@
     width: 100%;
     max-width: 1200px;
     height: 500px;
-    background: #222;
     color: white;
     margin: 0 auto;
     padding: 0px;
@@ -13,6 +12,7 @@
     position: relative;
     text-align: center;
     box-shadow: 0px -24px 58px 28px rgba(0,0,0,0.1);
+    
 }
 
 .expanding-section::after{
