@@ -11,7 +11,7 @@ const Navbar = () => {
       <p>Menu</p>
 
       <div className="logo">
-        <img src="/public/images/Logos/LuxeDrive_logo.png" alt="Logo" />
+        <img src="/images/Logos/LuxeDrive_logo.png" alt="Logo" />
       </div>
 
       <div className="user">

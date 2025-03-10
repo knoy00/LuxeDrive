@@ -10,7 +10,7 @@ function Brand() {
         <div className="brand_grid">
             <div className="div">
                 <div className="brand_img">
-                    <img src="/public/images/Bentley.avif" alt="" />
+                    <img src="/images/Bentley.avif" alt="" />
                 </div>
 
                <div className="brand_text_overlay">
@@ -21,7 +21,7 @@ function Brand() {
             </div> 
             <div className="div">
                 <div className="brand_img">
-                    <img src="/public/images/Porsche911.avif" alt="" />
+                    <img src="/images/Porsche911.avif" alt="" />
                 </div>
 
                <div className="brand_text_overlay">
@@ -32,7 +32,7 @@ function Brand() {
             </div> 
             <div className="div">
                 <div className="brand_img">
-                    <img src="/public/images/Aston_Martin.jpg" alt="" />
+                    <img src="/images/Aston_Martin.jpg" alt="" />
                 </div>
 
                <div className="brand_text_overlay">
@@ -43,7 +43,7 @@ function Brand() {
             </div> 
             <div className="div">
                 <div className="brand_img">
-                    <img src="/public/images/GLS63.avif" alt="" />
+                    <img src="/images/GLS63.avif" alt="" />
                 </div>
 
                <div className="brand_text_overlay">

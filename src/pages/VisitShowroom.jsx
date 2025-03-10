@@ -12,7 +12,7 @@ function VisitShowroom() {
                 <button>Search now</button>
             </div>
             <div className="showroom_right">
-                <img src="/public/images/showroom.jpg" alt="LuxeDrive Showroom" />
+                <img src="/images/showroom.jpg" alt="LuxeDrive Showroom" />
             </div>
       </div>
     </div>
