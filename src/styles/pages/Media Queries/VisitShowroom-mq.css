@@ -36,7 +36,7 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* Styles for small screens */
-      .showroom{
+    .showroom{
         padding: 30px 35px;
     }
 
@@ -75,15 +75,102 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  /* Styles for medium screens */
+    .showroom{
+        padding: 30px 75px;
+        position: relative;
+    }
+
+    .showroom_flex{
+        flex-direction: column;
+        height: 85vh;
+    }
+
+    .showroom_left{
+        padding: 50px 30px;
+        z-index: 10;
+    }
+
+    .showroom_left h1{
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    .showroom_left p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .showroom_left button{
+        padding: 15px 30px;
+        margin-top: 18px;
+        border: 1px solid #ffffff;
+        color: #000;    
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .showroom_right{
+        height: 500px;
+    }
+
+    .showroom_right img{
+        width: 100%;
+        margin-top: -150px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  /* Styles for large screens */
+  
+    .showroom{
+        padding: 30px 75px;
+        position: relative;
+    }
+
+    .showroom_flex{
+        
+        height: 40vh;
+    }
+
+    .showroom_left{
+        padding: 50px 30px;
+        z-index: 10;
+    }
+
+    .showroom_left h1{
+        font-size: 1.7em;
+        font-weight: 500;
+    }
+
+    .showroom_left p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .showroom_left button{
+        padding: 15px 30px;
+        margin-top: 18px;
+        border: 1px solid #ffffff;
+        color: #000;    
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .showroom_right{
+        height: 100px;
+    }
+
+    .showroom_right img{
+        width: 100%;
+        margin-top: -150px;
+    }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   /* Styles for extra large screens */
+  .showroom{
+    background-color: blue;
+  }
 }
 
 @media (min-width: 1400px) {

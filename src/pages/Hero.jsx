@@ -12,7 +12,7 @@ function Hero() {
         className='hero_text'
          initial={{ opacity: 0, y: -150 }}
          animate={{ opacity: 1, y: 150 }}
-         transition={{ duration: 2, ease: "easeOut", delay: .5 }} 
+         transition={{ duration: 1, ease: "easeOut", delay: .3 }} 
         >
             <h1>Experience the Future of Automobiles</h1>
             <h2>Next-Level Engineering for Next-Level Journeys</h2>

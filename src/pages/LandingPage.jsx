@@ -27,7 +27,6 @@ function LandinPage() {
       {/* <LuxeDrive /> */}
       <Brand />
       {/* <AllNew /> */}
-      <ImageWithSkeleton />
       <VisitShowroom />
       <ChallengeEverything />
       <JoinUs />
