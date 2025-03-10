@@ -13,15 +13,21 @@ function BentoGrid() {
 
 
   return (
-    <div className='bento'>
+    <motion.div 
+      className='bento'
+      ref={ref2}
+      initial={{ opacity: 0, y: 180 }}
+      animate={inView2? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 1.2, ease: 'easeOut', delay: .8 }}
+    >
       <div className="bento-grid">
         <motion.div 
           ref={ref1}
           className="box1" 
           style={{ gridArea: "box-1" }}
-          initial={{ opacity: 0, x: -180 }}
-          animate={inView1? { opacity: 1, x: 0 } : {}}
-          transition={{duration: 1, ease: "linear", delay: 2}}
+          // initial={{ opacity: 0, x: -180 }}
+          // animate={{ opacity: 1, x: 0 }}
+          // transition={{duration: 1, ease: "linear", delay: 2}}
         >
           <img src="/images/Bento-Grid/Aston_Martin.webp" alt="Aston Martin" />
         </motion.div>
@@ -59,7 +65,7 @@ function BentoGrid() {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 
