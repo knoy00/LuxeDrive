@@ -1,38 +1,111 @@
 @media (max-width: 575.98px) {
     .expanding-section{
-        width: 66%;
-        height: 140px;
-        margin-top: 50px;
+      width: 66%;
+      height: 140px;
+      margin-top: 50px;
     }
 
     .expanding-section video{
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
     }
 
 
     .expanding-header{
-        font-size: 18px;
+      font-size: 18px;
 
     }
 
     .expanding-paragraph{
-        font-size: 12px;
-        margin-top: 30px;
+      font-size: 12px;
+      margin-top: 30px;
     }
 }
   
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* Styles for small screens */
+  .expanding-section{
+    width: 66%;
+    height: 47vh;
+    margin-top: 100px;
+  }
+
+  .expanding-section video{
+    width: 100%;
+    object-fit: cover;
+    height: 114%;
+    margin-top: -40px;
+  }
+
+
+  .expanding-header{
+    font-size: 18px;
+    margin-top: -15px;
+
+  }
+
+  .expanding-paragraph{
+    font-size: 12px;
+    margin-top: 13px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Styles for medium screens */
+  .expanding-section{
+    width: 66%;
+    height: 47vh;
+    margin-top: 100px;
+    border-radius: 20px !important;
+  }
+
+  .expanding-section video{
+    width: 100%;
+    object-fit: cover;
+    height: 114%;
+    margin-top: -40px;
+  }
+
+
+  .expanding-header{
+    font-size: 25px;
+    margin-top: -15px;
+
+  }
+
+  .expanding-paragraph{
+    font-size: 14px;
+    margin-top: 22px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Styles for large screens */
+  .expanding-section{
+    width: 66%;
+    height: 47vh;
+    margin-top: 100px;
+    border-radius: 20px !important;
+  }
+
+  .expanding-section video{
+    width: 100%;
+    object-fit: cover;
+    height: 114%;
+    margin-top: -40px;
+  }
+
+
+  .expanding-header{
+    font-size: 25px;
+    margin-top: -15px;
+
+  }
+
+  .expanding-paragraph{
+    font-size: 15px;
+    margin-top:27px;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {

@@ -13,6 +13,7 @@ import Expandd from '../pages/Expandd'
 import Signup from '../pages/Signup'
 import BentoGrid from '../pages/BentoGrid'
 import GetToKnow from '../pages/GetToKnow'
+import LuxeDrive_Auction from '../pages/LuxeDrive_Auction'
 import ServiceModule from '../pages/ServiceModule'
 import Footer from '../components/Footer'
 
@@ -31,6 +32,7 @@ function LandinPage() {
       <JoinUs />
       <GetToKnow />
       <BentoGrid />
+      <LuxeDrive_Auction />
       <ServiceModule />
       <Footer />
     </div>

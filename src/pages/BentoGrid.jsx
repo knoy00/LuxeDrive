@@ -16,10 +16,11 @@ function BentoGrid() {
     <motion.div 
       className='bento'
       ref={ref2}
-      initial={{ opacity: 0, y: 180 }}
+      initial={{ opacity: 0, y: 150 }}
       animate={inView2? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 1.2, ease: 'easeOut', delay: .8 }}
     >
+      
       <div className="bento-grid">
         <motion.div 
           ref={ref1}
