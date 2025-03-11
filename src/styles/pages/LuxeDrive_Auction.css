@@ -10,23 +10,23 @@
 }
 
 .auction_header{
-    text-align: center;
     margin-bottom: 20px;
+    width: 65%;
 }
 
 .auction_header h1{
     font-size: 3em;
     font-weight: 700;
-    letter-spacing: .01em;
+    letter-spacing: .001em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
 }
 
 .auction_header p{
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 20px;
-    width: 50%;
-    margin-left: 25%;
-    color: #717171;
+    color: #7e7e7e;
 }
 
 .auction_content_wrapper{
@@ -66,7 +66,7 @@
 
 .auction_content p{
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
     color: #6b6b6b;
 }
