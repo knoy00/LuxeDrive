@@ -1,4 +1,5 @@
 import '../styles/pages/Bento.css'
+import '../styles/pages/Media Queries/Bento-mq.css'
 
 import { motion, useInView } from 'framer-motion';
 

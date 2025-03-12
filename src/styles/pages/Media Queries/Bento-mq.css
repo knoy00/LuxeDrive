@@ -1,0 +1,37 @@
+@media (max-width: 575.98px) {
+    .bento{
+        overflow: hidden;
+    }
+
+    .bento-grid{
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 350px 250px;
+        grid-template-areas: "box-1 box-1"
+                             "box-2 box-3"
+                             "box-4 box-3"
+                             "box-5 box-5";
+        gap: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .bento{
+        background-color: blue;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
