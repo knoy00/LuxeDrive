@@ -12,20 +12,58 @@
                              "box-5 box-5";
         gap: 10px;
     }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .bento{
-        background-color: blue;
+       overflow: hidden;
+    }
+
+    .bento-grid{
+        grid-template-columns: 430px 350px;
+        grid-template-rows: 290px 290px;
+        grid-template-areas: "box-6 box-6"
+                             "box-1 box-3"
+                             "box-5 box-3"
+                             "box-4 box-4";
+        gap: 10px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    
+    .bento-grid{
+        grid-template-columns: 400px 450px;
+        grid-template-rows: 290px 290px;
+        grid-template-areas: "box-8 box-6"
+                              "box-8 box-7"
+                              "box-5 box-1"
+                              "box-4 box-4"
+                              "box-3 box-2"
+                              "box-3 box-9";
+        gap: 10px;
+        
+    }
 
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+    .bento{
+        overflow: hidden;
+    }
+    .bento-grid{
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: "box-8 box-6"
+                              "box-8 box-7"
+                              "box-5 box-1"
+                              "box-4 box-2"
+                              "box-3 box-2"
+                              "box-9 box-9";
+        gap: 10px;
+        
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
