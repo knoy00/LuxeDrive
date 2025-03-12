@@ -44,6 +44,10 @@
     .join_us_text button{
         width: 100%;
     }
+    .join_us_text .seperator{
+        width: 100%;
+        margin: 20px 0;
+    }
   }
   
   /* Small devices (phones, 576px and up) */
