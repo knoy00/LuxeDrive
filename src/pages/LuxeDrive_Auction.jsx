@@ -2,6 +2,8 @@ import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
 import '../styles/pages/LuxeDrive_Auction.css';
+import '../styles/pages/Media Queries/LuxeDrive_Auction-mq.css'
+
 
 function LuxeDrive_Auction() {
 
@@ -74,7 +76,7 @@ function LuxeDrive_Auction() {
                     <p>
                         Why pay more when you can bid and win? Our auction platform connects you to exclusive deals on high-quality cars, ensuring you get the best price every time.
                     </p>
-                    <button className="auction_btn">Bid Now</button>
+                    <button className="auction_btn">Start Today</button>
                 </motion.div>
 
                 <motion.div 

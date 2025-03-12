@@ -32,7 +32,7 @@
 .auction_content_wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     justify-content: center;
     align-items: center;
     gap: 5em;
@@ -59,9 +59,10 @@
 
 .auction_content h2{
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 20px;
-    letter-spacing: .01em;
+    letter-spacing: .001em;
+    line-height: 1em;
 }
 
 .auction_content p{

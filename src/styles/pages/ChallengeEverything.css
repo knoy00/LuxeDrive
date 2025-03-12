@@ -54,4 +54,10 @@
     height: 100%;
     object-fit: cover;
 }
-  
+
+.tablet{
+    background-color: red;
+    width: 100%;
+    max-width: 1500px;
+    height: 600px;
+}
