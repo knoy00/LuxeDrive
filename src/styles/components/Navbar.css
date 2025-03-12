@@ -5,8 +5,6 @@
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
-    backdrop-filter: blur(40px);
-    background-color: rgba(0, 0, 0, 0.264);
     z-index: 50;
     position: absolute;
 }
@@ -17,6 +15,7 @@
     width:20%;
     text-align: center;
     cursor: pointer;
+    transition: .4s ease-in-out;
 }
 
 .logo img{
@@ -26,4 +25,12 @@
 
 .nav_icon{
     cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.on_scroll{
+    backdrop-filter: blur(50px);
+    background-color: #0000004a;
+    position: fixed;
+    transition: .4s ease-in-out;
 }
