@@ -47,8 +47,10 @@ function Navmenu() {
         }
     }
 
-    const handleActiveTab = (tab
-
+    const handleActiveTab = (brandTab) => {
+        setIsActive(brandTab)
+    }
+ 
 
   return (
     <div className="nav_menu">
@@ -67,19 +69,31 @@ function Navmenu() {
                 <div className="flex_left_content">
                     <div className="flc_brands">
                         <div className="brand_list">
-                            <div className="brand_name" onClick={() => handleClick('')}>
+                            {<div className={`brand_name ${isActive === 'Benz' ? 'active_brand_tab' : ''}`} onClick={() => {
+                                handleClick('')
+                                handleActiveTab('Benz')
+                            }}>
                                 <p>Mercedes Benz</p>
                                 <FaAngleRight />
-                            </div>
-                            <div className="brand_name" onClick={() => handleClick('Porsche')}>
+                            </div>}
+                            <div className={`brand_name ${isActive === 'Porsche' ? 'active_brand_tab' : ''}`} onClick={() => {
+                                handleClick('Porsche')
+                                handleActiveTab('Porsche')
+                            }}>
                                 <p>Porsche</p>
                                 <FaAngleRight />
                             </div>
-                            <div className="brand_name" onClick={() => handleClick('Aston')}>
+                            <div className={`brand_name ${isActive === 'Aston' ? 'active_brand_tab' : ''}`} onClick={() => {
+                                handleClick('Aston')
+                                handleActiveTab('Aston')
+                            }}>
                                 <p>Aston Martin</p>
                                 <FaAngleRight />
                             </div>
-                            <div className="brand_name" onClick={() => handleClick('Bentley')}>
+                            <div className={`brand_name ${isActive === 'Bentley' ? 'active_brand_tab' : ''}`} onClick={() => {
+                                handleClick('Bentley')
+                                handleActiveTab('Bentley')
+                            }}>
                                 <p>Bentley</p>
                                 <FaAngleRight />
                             </div>

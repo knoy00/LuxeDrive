@@ -81,19 +81,31 @@
     padding: 20px 10px;
     margin: 20px 0;
     cursor: pointer;
-}
-
-.brand_name:hover{
-    background-color: #fff;
+    transition: background-color .2s ease-in-out;
     border-radius: 5px;
 }
 
+.brand_name:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.active_brand_tab{
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.active_hover{
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    color: #fff;
+}
 
 .brand_img_container{
     width: 60% ;
     height: 90%;
     padding: 50px 0;
-    background-color: #fff;
     border-radius: 10px;
     
 }
