@@ -1,6 +1,7 @@
 @media (max-width: 575.98px) {
     .auction_section{
         padding: 15px;
+        overflow-x: hidden;
     }
 
     .auction_header{

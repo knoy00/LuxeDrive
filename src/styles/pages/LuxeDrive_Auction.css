@@ -1,6 +1,7 @@
 .auction_section{
     width: 100%;
     padding: 30px;
+    overflow: hidden;
 }
 
 .auction_inner{
