@@ -1,5 +1,6 @@
 @media (max-width: 575.98px) {
   .section-get-to-know{
+    overflow-y: hidden;
   }
   
   .gtk_header{
@@ -14,6 +15,7 @@
       padding: 10px;
       width: 100%;
       overflow-x: scroll;
+      overflow-y: hidden;
   }
   .gtk-flex{
     display: grid;
