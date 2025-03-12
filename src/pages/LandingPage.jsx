@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import Hero from '../pages/Hero'
+import Navmenu from '../components/Navmenu'
 import Models from '../pages/Models'
 import LuxeDrive from '../pages/LuxeDrive'
 import Brand from '../pages/Brand'
@@ -24,6 +25,7 @@ function LandinPage() {
     <div className='landing_page'>
       <Navbar />
       <Hero />
+      <Navmenu />
       <BuildInfo />
       <Models />
       <Brand />

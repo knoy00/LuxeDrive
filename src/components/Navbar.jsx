@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScroll ? "on_scroll" : ""}`}>
       <div>
-        <FaBars className="nav_icon" size={25} color="white" />
+        <FaBars className="nav_icon" size={22} color="white" />
       </div>
 
       <div className="logo">
@@ -32,7 +32,7 @@ const Navbar = () => {
       </div>
 
       <div className="user">
-        <FaUser className="nav_icon" size={25} color="white" />
+        <FaUser className="nav_icon" size={22} color="white" />
       </div>
     </nav>
   );
