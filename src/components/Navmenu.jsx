@@ -1,6 +1,8 @@
 import '../styles/components/Media Queries/Navmenu-mq.css'
 import '../styles/components/Navmenu.css'
 
+import { useState } from 'react';
+
 import { FaCarSide } from 'react-icons/fa6';
 import { FaSearch } from 'react-icons/fa';
 import { FaPalette } from 'react-icons/fa';
@@ -14,7 +16,55 @@ function Navmenu() {
     <div className="nav_menu">
       <div className="nav_menu_inner">
         <div className="nav_flex_container">
-            <div className="nav_flex_left"></div>
+            <div className="nav_flex_left">
+                <div className="flex_left_header">
+                    <p>Brands</p>
+                    <p>Models</p>
+                    <p>Service</p>
+                    <p>News & Events</p>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                </div>
+
+                <div className="flex_left_content">
+                    <div className="flc_brands">
+                        <div className="brand_list">
+                            <div className="brand_name">
+                                <p>Mercedes Benz</p>
+                                <FaAngleRight />
+                            </div>
+                            <div className="brand_name">
+                                <p>Porsche</p>
+                                <FaAngleRight />
+                            </div>
+                            <div className="brand_name">
+                                <p>Aston Martin</p>
+                                <FaAngleRight />
+                            </div>
+                            <div className="brand_name">
+                                <p>Bentley</p>
+                                <FaAngleRight />
+                            </div>
+                            
+                        </div>
+                        <div className="brand_img_container">
+                            <div className="nav_brand_img">
+                                <img src="/images/Nav Images/G63_nav.png" alt="" />
+                            </div>
+                            <div className="nav_brand_img porsche">
+                                <img src="/images/Nav Images/Porsche-nav.png" alt="" />
+                            </div>
+                            <div className="nav_brand_img">
+                                <img src="/images/Nav Images/Aston-nav.png" alt="" />
+                            </div>
+                            <div className="nav_brand_img">
+                                <img src="/images/Nav Images/Bentley-nav.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="nav_flex_right">
                 <div className="explore_brand">
                     <div className="explore_brand_header">
@@ -64,7 +114,7 @@ function Navmenu() {
                 <div className="explore_brand">
                     <div className="explore_brand_header">
                         <div className="explore_brand_header_content">
-                            <FaCarSide color='blue'/>
+                            <FaFlagCheckered color='blue'/>
                             <h2>Schedule a Test Drive </h2>
                         </div>
                         <div className="angle_icon"><FaAngleRight/></div>
