@@ -1,35 +1,34 @@
-import { useState } from 'react'
+
 import '../styles/pages/Signup.css'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useState } from 'react';
 
 
-function Signup() {
+const Signup = () => {
+  const [activeTab, setActiveTab] = useState(0); // Default active tab index
+
+  const tabs = ["Option 1", "Option 2", "Option 3"];
+
   return (
-    <div className='signup_container'>
-        <div className="signup_left">
-            <div className="signup_image">
-                <img src="/images/Porsche_911.webp" alt="" />
-            </div>
-        </div>
-        <div className="signup_right">
-            <div className="signup_form">
-                <h1>Sign up</h1>
-                <form action="" method="post">
-                    <input type="text" placeholder='Full Name' />
-                    <input type="email" placeholder='Email' />
-                    <input type="password" placeholder='Password' />
-                    <input type="password" placeholder='Confirm Password' />
-                    <div className="signup_terms">
-                        <input type="checkbox" id="terms" name="terms" />
-                        <label htmlFor="terms">I agree to the terms and conditions</label>
-                    </div>
-                    <button type="submit">Sign up</button>
-                </form>
-            </div>
-        </div>
-      
+    <div style={{ display: "flex", gap: "10px" }}>
+      {tabs.map((tab, index) => (
+        <button
+          key={index}
+          onClick={() => setActiveTab(index)}
+          style={{
+            padding: "10px 20px",
+            border: "1px solid black",
+            cursor: "pointer",
+            backgroundColor: activeTab === index ? "white" : "gray",
+            color: activeTab === index ? "black" : "white",
+          }}
+        >
+          {tab}
+        </button>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;
+

@@ -83,6 +83,7 @@
     cursor: pointer;
     transition: background-color .2s ease-in-out;
     border-radius: 5px;
+    border: 2px solid #eff1f3;
 }
 
 .brand_name:hover{
@@ -94,20 +95,17 @@
     border-radius: 5px;
     background-color: #ffffff;
     color: #000;
+    border: 2px solid #b1b1b1;
 }
 
-.active_hover{
-    background-color: #1d1d1d;
-    border-radius: 5px;
-    color: #fff;
-}
 
 .brand_img_container{
     width: 60% ;
     height: 90%;
     padding: 50px 0;
     border-radius: 10px;
-    
+    /* background-color: #fff; */
+    overflow: hidden;
 }
 
 .nav_brand_img{

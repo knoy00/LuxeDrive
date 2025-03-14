@@ -26,6 +26,7 @@ function LandinPage() {
       <Navbar />
       <Hero />
       <Navmenu />
+      <Signup />
       <BuildInfo />
       <Models />
       <Brand />

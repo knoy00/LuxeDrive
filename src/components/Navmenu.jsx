@@ -1,7 +1,10 @@
 import '../styles/components/Media Queries/Navmenu-mq.css'
 import '../styles/components/Navmenu.css'
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+
+import { motion } from 'framer-motion';
+
 
 import { FaCarSide } from 'react-icons/fa6';
 import { FaSearch } from 'react-icons/fa';
@@ -13,7 +16,7 @@ import { FaAngleRight } from 'react-icons/fa';
 
 function Navmenu() {
 
-    const [isBenzOpen, setIsBenzOpen] = useState(true);
+    const [isBenzOpen, setIsBenzOpen] = useState(false);
     const [isPorscheOpen, setIsPorscheOpen] = useState(false);
     const [isBentleyOpen, setIsBentleyOpen] = useState(false);
     const [isAstonOpen, setIsAstonOpen] = useState(false);
@@ -57,7 +60,7 @@ function Navmenu() {
       <div className="nav_menu_inner">
         <div className="nav_flex_container">
             <div className="nav_flex_left">
-                <div className="flex_left_header">
+                <div className="flex_left_header">      
                     <p>Brands</p>
                     <p>Models</p>
                     <p>Service</p>
@@ -100,19 +103,46 @@ function Navmenu() {
                             
                         </div>
                         <div className="brand_img_container">
-                            {isBenzOpen && <div className="nav_brand_img">
+                            {isBenzOpen && <motion.div 
+                            className="nav_brand_img"
+                            initial ={{opacity: 0, x: 190}}
+                            animate = {{opacity: 1, x: 0}}
+                            transition={{duration: .2, ease: 'linear'}}
+                            >
                                 <img src="/images/Nav Images/G63_nav.png" alt="" />
-                            </div>}
-                            {isPorscheOpen && <div className="nav_brand_img">
+                            </motion.div>}
+
+                            {isPorscheOpen && <motion.div 
+                            className="nav_brand_img"
+                            initial ={{opacity: 0, x: -220}}
+                            animate = {{opacity: 1, x: 0}}
+                            transition={{duration: .2, ease: 'linear'}}
+                            >
                                 <img src="/images/Nav Images/Porsche-nav.png" alt="" />
-                            </div>}
-                            {isAstonOpen && <div className="nav_brand_img">
+                            </motion.div>}
+
+                            {isAstonOpen && <motion.div 
+                            className="nav_brand_img"
+                            initial ={{opacity: 0, x: 190}}
+                            animate = {{opacity: 1, x: 0}}
+                            transition={{duration: .2, ease: 'linear'}}
+                            >
                                 <img src="/images/Nav Images/Aston-nav.png" alt="" />
-                            </div>}
-                            {isBentleyOpen && <div className="nav_brand_img">
+                            </motion.div>}
+
+                            {isBentleyOpen && <motion.div 
+                            className="nav_brand_img"
+                            initial ={{opacity: 0, x: 190}}
+                            animate = {{opacity: 1, x: 0}}
+                            transition={{duration: .2, ease: 'linear'}}
+                            >
                                 <img src="/images/Nav Images/Bentley-nav.png" alt="" />
-                            </div>}
+                            </motion.div>}
+                            
                         </div>
+                    </div>
+                    <div className="flc_models">
+                        
                     </div>
                 </div>
             </div>
