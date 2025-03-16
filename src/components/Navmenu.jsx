@@ -1,7 +1,7 @@
 import '../styles/components/Media Queries/Navmenu-mq.css'
 import '../styles/components/Navmenu.css'
 
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 import { motion } from 'framer-motion';
 
@@ -142,7 +142,7 @@ function Navmenu() {
                         </div>
                     </div>
                     <div className="flc_models">
-                        
+
                     </div>
                 </div>
             </div>
