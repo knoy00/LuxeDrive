@@ -23,6 +23,16 @@ function Navmenu() {
 
     const [isActive, setIsActive] = useState(null);
 
+    const [models, setModels] = useState(false);
+    const [brands, setBrands] = useState(true);
+
+    const handleModelToggle = () => {
+        if(!models){
+            setModels(true);
+            setBrands(false);
+        }
+    }
+
     const handleClick = (tab) => {
         if(tab === 'Porsche'){
             setIsPorscheOpen(true);
@@ -62,7 +72,7 @@ function Navmenu() {
             <div className="nav_flex_left">
                 <div className="flex_left_header">      
                     <p>Brands</p>
-                    <p>Models</p>
+                    <p onClick={handleModelToggle}>Models</p>
                     <p>Service</p>
                     <p>News & Events</p>
                     <p>About Us</p>
@@ -71,7 +81,7 @@ function Navmenu() {
 
                 <div className="flex_left_content">
                     <div className="flc_brands">
-                        <div className="brand_list">
+                        {<div className="brand_list">
                             {<div className={`brand_name ${isActive === 'Benz' ? 'active_brand_tab' : ''}`} onClick={() => {
                                 handleClick('')
                                 handleActiveTab('Benz')
@@ -101,8 +111,8 @@ function Navmenu() {
                                 <FaAngleRight />
                             </div>
                             
-                        </div>
-                        <div className="brand_img_container">
+                        </div>}
+                        {<div className="brand_img_container">
                             {isBenzOpen && <motion.div 
                             className="nav_brand_img"
                             initial ={{opacity: 0, x: 190}}
@@ -139,10 +149,67 @@ function Navmenu() {
                                 <img src="/images/Nav Images/Bentley-nav.png" alt="" />
                             </motion.div>}
                             
-                        </div>
+                        </div>}
                     </div>
                     <div className="flc_models">
-
+                        <div className="models_list_wrapper">
+                            <div className="benz-list">
+                                <div className="model-list-header">
+                                    <h2>Mercedes Benz</h2>
+                                </div>
+                                <div className="model-list">
+                                        <ul>
+                                            <li>S-Class</li>
+                                            <li>G-Class</li>
+                                            <li>AMG GT</li>
+                                            <li>E-Class</li>
+                                            <li>C-Class</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <div className="aston-list">
+                                <div className="model-list-header">
+                                    <h2>Aston Martin</h2>
+                                </div>
+                                <div className="model-list">
+                                        <ul>
+                                            <li>Rapide</li>
+                                            <li>Vantage</li>
+                                            <li>Valkyrie</li>
+                                            <li>DBS</li>
+                                            <li>DB11</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <div className="porsche-list">
+                                <div className="model-list-header">
+                                    <h2>Porsche</h2>
+                                </div>
+                                <div className="model-list">
+                                        <ul>
+                                            <li>911 Turbo S</li>
+                                            <li>Cayenne</li>
+                                            <li>Taycan</li>
+                                            <li>Panamera</li>
+                                            <li>718 Cayman</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <div className="bentley-list">
+                                <div className="model-list-header">
+                                    <h2>Bentley</h2>
+                                </div>
+                                <div className="model-list">
+                                        <ul>
+                                            <li>Azure</li>
+                                            <li>Continental GT</li>
+                                            <li>Flying Spur</li>
+                                            <li>Bentayga</li>
+                                            <li>Mulsanne</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
