@@ -211,6 +211,23 @@ function Navmenu() {
                             </div>
                         </div>
                     </div>
+                    
+                    <div className="flc_services">
+                        <div className="services_list_wrapper">
+                            <div className="services_list_header">
+                                <h2>Services</h2>
+                            </div>
+                            <div className="services_list">
+                                <ul>
+                                    <li>Service Centers</li>
+                                    <li>Parts & Accessories</li>
+                                    <li>Maintenance</li>
+                                    <li>Insurance</li>
+                                    <li>Roadside Assistance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

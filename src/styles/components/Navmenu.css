@@ -128,6 +128,7 @@
 .flc_models{
     width: 100%;
     padding: 50px 20px;
+    display: none;
 }
 
 .models_list_wrapper{
@@ -146,6 +147,7 @@
     font-weight: 600;
     color: #222222;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .model-list{
@@ -165,9 +167,60 @@
     list-style-type: none;
     padding: 10px 0;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    width: 100%;
 }
 
 .model-list ul li:hover{
+    text-decoration: underline;
+}
+
+/*********************************88 SERVICES */
+
+.flc_services{
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.services_list_wrapper{
+    width: 100%;
+}
+
+.services_list_header{
+    width: 100%;
+}
+
+.services_list_header h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.services_list{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.services_list ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.services_list ul li{
+    list-style-type: none;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+}
+
+.services_list ul li:hover{
     text-decoration: underline;
 }
 
