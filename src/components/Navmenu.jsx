@@ -228,6 +228,56 @@ function Navmenu() {
                             </div>
                         </div>
                     </div>
+
+                    <div className="flc_news_events">
+                        <div className="news_events_list_wrapper">
+                            <div className="news_events_list_header">
+                                <h2>News & Events</h2>
+                            </div>
+                            <div className="news_events_list">
+                                <ul>
+                                    <li>Mercedes Benz's New E-Class</li>
+                                    <li>Aston Martin's Vantage Roadster</li>
+                                    <li>Porsche 911 Turbo S Release</li>
+                                    <li>Bentley Continental GT Announcement</li>
+                                    <li>Roadster Celebration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flc_about_us">
+                        <div className="about_us_wrapper">
+                            <div className="about_us_header">
+                                <h2>About Us</h2>
+                            </div>
+                            <div className="about_us_text">
+                                <p>
+                                    Benz, Porsche, Aston Martin, and Bentley are premier brands in the automotive industry. Our passion for driving has driven us to create innovative and sustainable solutions that meet the needs of our customers. <br /> <br />
+                                    With a commitment to excellence, we blend state-of-the-art engineering with timeless design, ensuring every vehicle delivers an unparalleled driving experience. From high-performance sports cars to ultra-luxurious sedans and SUVs, we strive to push the boundaries of automotive craftsmanship. <br /> <br />
+                                    Our dedication to sustainability is reflected in our pursuit of advanced electric and hybrid technologies, reducing environmental impact while maintaining the thrill of driving. As pioneers in the industry, we continue to set new standards in safety, comfort, and performance. <br /> <br />
+                                    At the heart of our brand is a deep connection with our customers. We believe in delivering not just cars, but a lifestyle—one that embodies elegance, power, and innovation. Whether on the open road or in the city, our vehicles are designed to inspire and elevate every journey.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flc_contact_us">
+                        <div className="contact_us_wrapper">
+                            <div className="contact_us_header">
+                                <h2>Contact Us</h2>
+                            </div>
+                            <div className="contact_us_text">
+                                <p>
+                                    For inquiries, please contact us at <a href="mailto:info@luxedrive.com">info@luxedrive.com</a> or visit our <a href="https://www.luxedrive.com/contact">contact page</a> for more information. <br /> <br />
+                                    Our office is located at 123 Main Street, Anytown, USA 12345. <br /> <br />
+                                    We are open daily from 9 AM to 5 PM. <br /> <br />
+                                    Thank you for your interest in our brand!
+                                </p>
+                            </div>    
+        
+                        </div>
+                    </div>
                 </div>
             </div>
 

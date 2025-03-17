@@ -181,6 +181,7 @@
 .flc_services{
     width: 100%;
     padding: 50px 20px;
+    display: none;
 }
 
 .services_list_wrapper{
@@ -222,6 +223,126 @@
 
 .services_list ul li:hover{
     text-decoration: underline;
+}
+
+/***************************8 NEWS AND EVENTS */
+
+.flc_news_events{
+    width: 100%;
+    padding: 50px 20px;
+    display: none;
+}
+
+.news_events_list_wrapper{
+    width: 100%;
+}
+
+.news_events_list_header{
+    width: 100%;
+}
+
+.news_events_list_header h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.news_events_list{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.news_events_list ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.news_events_list ul li{
+    list-style-type: none;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+    width: 35%;
+}
+
+.news_events_list ul li:hover{
+    text-decoration: underline;
+}
+
+/**************************** ABOUT US */
+
+.flc_about_us{
+    width: 100%;
+    padding: 50px 20px;
+    display: none;
+}
+
+.about_us_wrapper{
+    width: 100%;
+}
+
+.about_us_header{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about_us_header h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.about_us_text{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 2;
+    color: #222222;
+}   
+
+/***************************************88 CONTACT US */
+
+.flc_contact_us{
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.contact_us_wrapper{
+    width: 100%;
+}
+
+.contact_us_header{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact_us_header h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact_us_text{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222222;
+}
+
+.contact_us_text p{
+    margin-bottom: 10px;
 }
 
 
