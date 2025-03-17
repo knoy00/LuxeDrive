@@ -1,7 +1,7 @@
 import '../styles/components/Media Queries/Navmenu-mq.css'
 import '../styles/components/Navmenu.css'
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { motion } from 'framer-motion';
 
@@ -22,16 +22,6 @@ function Navmenu() {
     const [isAstonOpen, setIsAstonOpen] = useState(false);
 
     const [isActive, setIsActive] = useState(null);
-
-    const [models, setModels] = useState(false);
-    const [brands, setBrands] = useState(true);
-
-    const handleModelToggle = () => {
-        if(!models){
-            setModels(true);
-            setBrands(false);
-        }
-    }
 
     const handleClick = (tab) => {
         if(tab === 'Porsche'){
@@ -64,6 +54,11 @@ function Navmenu() {
         setIsActive(brandTab)
     }
  
+    const [openMenu, setOpenMenu] = useState("flc_brands");
+    const handleMenuToggle = (menu) => {
+        setOpenMenu(menu);
+    }
+    
 
   return (
     <div className="nav_menu">
@@ -71,17 +66,17 @@ function Navmenu() {
         <div className="nav_flex_container">
             <div className="nav_flex_left">
                 <div className="flex_left_header">      
-                    <p>Brands</p>
-                    <p onClick={handleModelToggle}>Models</p>
-                    <p>Service</p>
-                    <p>News & Events</p>
-                    <p>About Us</p>
-                    <p>Contact Us</p>
+                    <p onClick={() => handleMenuToggle('flc_brands')}>Brands</p>
+                    <p onClick={() => handleMenuToggle('flc_models')}>Models</p>
+                    <p onClick={() => handleMenuToggle('flc_service')}>Service</p>
+                    <p onClick={() => handleMenuToggle('flc_news')}>News & Events</p>
+                    <p onClick={() => handleMenuToggle('flc_about')}>About Us</p>
+                    <p onClick={() => handleMenuToggle('flc_contact')}>Contact Us</p>
                 </div>
 
                 <div className="flex_left_content">
-                    <div className="flc_brands">
-                        {<div className="brand_list">
+                    <div className={`flc_brands ${openMenu !== 'flc_brands' ? 'hide_content' : ''}`}>
+                        <div className={`brand_list`}>
                             {<div className={`brand_name ${isActive === 'Benz' ? 'active_brand_tab' : ''}`} onClick={() => {
                                 handleClick('')
                                 handleActiveTab('Benz')
@@ -111,8 +106,8 @@ function Navmenu() {
                                 <FaAngleRight />
                             </div>
                             
-                        </div>}
-                        {<div className="brand_img_container">
+                        </div>
+                        <div className="brand_img_container">
                             {isBenzOpen && <motion.div 
                             className="nav_brand_img"
                             initial ={{opacity: 0, x: 190}}
@@ -149,9 +144,10 @@ function Navmenu() {
                                 <img src="/images/Nav Images/Bentley-nav.png" alt="" />
                             </motion.div>}
                             
-                        </div>}
+                        </div>
                     </div>
-                    <div className="flc_models">
+
+                    <div className={`flc_models ${openMenu === 'flc_models' ? 'display_content' : ''}`}>
                         <div className="models_list_wrapper">
                             <div className="benz-list">
                                 <div className="model-list-header">
@@ -212,7 +208,7 @@ function Navmenu() {
                         </div>
                     </div>
                     
-                    <div className="flc_services">
+                    <div className={`flc_services ${openMenu === 'flc_service' ? 'display_content' : ''}`}>
                         <div className="services_list_wrapper">
                             <div className="services_list_header">
                                 <h2>Services</h2>
@@ -229,7 +225,7 @@ function Navmenu() {
                         </div>
                     </div>
 
-                    <div className="flc_news_events">
+                    <div className={`flc_news_events ${openMenu === 'flc_news' ? 'display_content' : ''}`}>
                         <div className="news_events_list_wrapper">
                             <div className="news_events_list_header">
                                 <h2>News & Events</h2>
@@ -246,7 +242,7 @@ function Navmenu() {
                         </div>
                     </div>
 
-                    <div className="flc_about_us">
+                    <div className={`flc_about_us ${openMenu === 'flc_about' ? 'display_content' : ''}`}>
                         <div className="about_us_wrapper">
                             <div className="about_us_header">
                                 <h2>About Us</h2>
@@ -262,7 +258,7 @@ function Navmenu() {
                         </div>
                     </div>
 
-                    <div className="flc_contact_us">
+                    <div className={`flc_contact_us ${openMenu === 'flc_contact' ? 'display_content' : ''}`}>
                         <div className="contact_us_wrapper">
                             <div className="contact_us_header">
                                 <h2>Contact Us</h2>

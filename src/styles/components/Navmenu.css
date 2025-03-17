@@ -59,6 +59,8 @@
     display: flex;
 }
 
+/*************************************8 BRANDS */
+
 .flc_brands{
     width: 100%;
     display: flex;
@@ -67,8 +69,6 @@
     height: 100%;
     gap: 20px;
     margin-top: 20px;
-    background-color: red;
-    display: none;
 }
 
 
@@ -313,6 +313,7 @@
 .flc_contact_us{
     width: 100%;
     padding: 50px 20px;
+    display: none;
 }
 
 .contact_us_wrapper{
@@ -345,6 +346,13 @@
     margin-bottom: 10px;
 }
 
+.display_content{
+    display: block;
+}
+
+.hide_content{
+    display: none;
+}
 
 /* NAvigation Right container */
 .nav_flex_right{
