@@ -5,8 +5,6 @@ import { useState, useContext, useEffect } from 'react';
 
 import { motion } from 'framer-motion';
 import { ScreenContext } from '../ScreenProvider';
-
-
 import { FaCarSide } from 'react-icons/fa6';
 import { FaSearch } from 'react-icons/fa';
 import { FaPalette } from 'react-icons/fa';
@@ -14,10 +12,12 @@ import { FaFlagCheckered } from 'react-icons/fa';
 import { FaStar } from 'react-icons/fa';
 import { FaBuilding } from 'react-icons/fa';
 import { FaAngleRight } from 'react-icons/fa';
-
+import { FaXmark } from 'react-icons/fa6';
 function Navmenu() {
 
     const {openNav} = useContext(ScreenContext);
+    const {setOpenNav} = useContext(ScreenContext);
+
 
     const [isBenzOpen, setIsBenzOpen] = useState(false);
     const [isPorscheOpen, setIsPorscheOpen] = useState(false);
@@ -78,6 +78,15 @@ function Navmenu() {
     transition={{ duration: .8, ease: 'easeOut' }}
     >
       <div className="nav_menu_inner">
+        <div className='nav_menu_header'>
+            <div className="logo">
+                <img src="/images/Logos/LuxeDrive_black.png" alt="" />
+            </div>
+
+            <div onClick={() => setOpenNav(false)}>
+                <FaXmark size={20} color='#000' className='close_btn'/>
+            </div>
+        </div>
         <div className="nav_flex_container">
             <div className="nav_flex_left">
                 <div className="flex_left_header">      
