@@ -5,7 +5,6 @@
     padding: 15px 50px;
     display: flex;
     justify-content: space-between;
-    z-index: 50;
     position: absolute;
 }
 
@@ -33,4 +32,6 @@
     background-color: #0000004a;
     position: fixed;
     transition: .4s ease-in-out;
+    z-index: 30;
+
 }

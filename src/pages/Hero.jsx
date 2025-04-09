@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import { motion } from 'framer-motion'
 
 function Hero() {
+
   return (
     <div className="hero">
         <Navbar />

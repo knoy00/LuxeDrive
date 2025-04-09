@@ -1,9 +1,10 @@
 import '../styles/components/Media Queries/Navmenu-mq.css'
 import '../styles/components/Navmenu.css'
 
-import { useState, useEffect } from 'react';
+import { useState, useContext, useEffect } from 'react';
 
 import { motion } from 'framer-motion';
+import { ScreenContext } from '../ScreenProvider';
 
 
 import { FaCarSide } from 'react-icons/fa6';
@@ -15,6 +16,8 @@ import { FaBuilding } from 'react-icons/fa';
 import { FaAngleRight } from 'react-icons/fa';
 
 function Navmenu() {
+
+    const {openNav} = useContext(ScreenContext);
 
     const [isBenzOpen, setIsBenzOpen] = useState(false);
     const [isPorscheOpen, setIsPorscheOpen] = useState(false);
@@ -58,10 +61,22 @@ function Navmenu() {
     const handleMenuToggle = (menu) => {
         setOpenMenu(menu);
     }
+
+    useEffect(() => {
+        if(openNav){
+            document.body.classList.add('no-scroll');
+        }
+        document.body.classList.remove('no-scroll');
+    }, [openNav])
     
 
   return (
-    <div className="nav_menu">
+    <>
+        {openNav && <motion.div className="nav_menu"
+    initial={{opacity: 1, y: -2000}}
+    animate={{opacity: 1, y: 0}}
+    transition={{ duration: .8, ease: 'easeOut' }}
+    >
       <div className="nav_menu_inner">
         <div className="nav_flex_container">
             <div className="nav_flex_left">
@@ -232,8 +247,8 @@ function Navmenu() {
                             </div>
                             <div className="news_events_list">
                                 <ul>
-                                    <li>Mercedes Benz's New E-Class</li>
-                                    <li>Aston Martin's Vantage Roadster</li>
+                                    <li>Mercedes Benzs New E-Class</li>
+                                    <li>Aston Martins Vantage Roadster</li>
                                     <li>Porsche 911 Turbo S Release</li>
                                     <li>Bentley Continental GT Announcement</li>
                                     <li>Roadster Celebration</li>
@@ -370,7 +385,8 @@ function Navmenu() {
             </div>
         </div>
       </div>
-    </div>
+        </motion.div>}
+    </>
   )
 }
 
